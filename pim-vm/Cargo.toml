@@ -1,0 +1,18 @@
+[package]
+name = "pim-vm"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["staticlib"]
+
+[features]
+shared_pim_units = []
+
+[dependencies]
+cxx = "1.0.110"
+env_logger = "0.10.1"
+half = "2.3.1"
+log = "0.4.20"
+pim-isa = { path = "../pim-isa" }
+serde_json = "1.0.108"
